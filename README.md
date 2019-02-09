@@ -6,7 +6,7 @@ A PyTorch implementation of [Matrix Capsules with EM Routing](https://openreview
 
 2. Start training (default: CIFAR-10)
 ```bash
-python train.py
+python train.py --batch-size 20 --test-batch-size 20
 ```
 
 Note that master is upgraded to be compatiable with PyTorch `0.4.0`.
