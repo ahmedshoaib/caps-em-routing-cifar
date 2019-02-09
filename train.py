@@ -45,6 +45,7 @@ parser.add_argument('--dataset', type=str, default='cifar', metavar='D',
 def get_setting(args):
     kwargs = {'num_workers': 1, 'pin_memory': True} if args.cuda else {}
     path = os.path.join(args.data_folder, args.dataset)
+    '''
     if args.dataset == 'mnist':
         num_class = 10
         train_loader = torch.utils.data.DataLoader(
@@ -80,10 +81,11 @@ def get_setting(args):
                           transforms.ToTensor()
                       ])),
             batch_size=args.test_batch_size, shuffle=True, **kwargs)
-    elif args.dataset == 'cifar':
+    '''
+    if args.dataset == 'cifar':
         num_class = 10
         train_loader = torch.utils.data.DataLoader(
-            datasets.CIFAR10(path, train=True, download=False,
+            datasets.CIFAR10(path, train=True, download=True,
                       transform=transforms.Compose([
                           transforms.Resize(28),
                           transforms.RandomHorizontalFlip(),
