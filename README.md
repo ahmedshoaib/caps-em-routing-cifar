@@ -17,14 +17,15 @@ git checkout 0.3.1.post3
 
 ## CIFAR-10 experiments
 
-The experiments are conducted on TitanXP.
+The experiments are conducted on Tesla K80
 Specific setting is `lr=0.01`, `batch_size=20`, `weight_decay=0`, Adam optimizer, without data augmentation.
 
 Following is the result after 10 epochs training:
 
 | Arch | Iters | Coord Add | Loss | BN | Test Accuracy |
 | ---- |:-----:|:---------:|:----:|:--:|:-------------:|
-| A=B=C=D=32        | 3 | Y | Spread    | Y |  62.10   |
+| A=B=C=D=32(color)        | 2 | Y | Spread    | Y |  62.10   |
+| A=B=C=D=32(B/W)        | 2 | Y | Spread    | Y |  55.2   |
 
 
 
