@@ -24,7 +24,7 @@ Following is the result after 10 epochs training:
 
 | Arch | Iters | Coord Add | Loss | BN | Test Accuracy |
 | ---- |:-----:|:---------:|:----:|:--:|:-------------:|
-| A=B=C=D=32(color)        | 2 | Y | Spread    | Y |  62.10   |
+| A=B=C=D=32(color)        | 2 | Y | Spread    | Y |  62.480   |
 | A=B=C=D=32(B/W)        | 2 | Y | Spread    | Y |  55.2   |
 | A=64 B=8 C=16 D=16 (color)        | 2 | Y | Spread    | Y |  60.17000   |
 
