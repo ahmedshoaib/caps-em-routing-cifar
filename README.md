@@ -15,14 +15,16 @@ python train.py --batch-size 20 --test-batch-size 20
 The experiments are conducted on Tesla K80
 Specific setting is `lr=0.01`, `batch_size=20`, `weight_decay=0`, Adam optimizer, without data augmentation.
 
-Following is the result after 10 epochs training:
+Following is the result after training:
 
-| Arch | EM-Iters | Coord Add | Loss | BN | Test Accuracy |
+| Arch | EM-Iters | Coord Add | Loss | Epochs | Test Accuracy |
 | ---- |:-----:|:---------:|:----:|:--:|:-------------:|
-| A=B=C=D=32(color)        | 2 | Y | Spread    | Y |  62.480   |
-| A=B=C=D=32(B/W)        | 2 | Y | Spread    | Y |  55.2   |
-| A=64 B=8 C=16 D=16 (color)        | 2 | Y | Spread    | Y |  60.17000   |
-| A=B=C=D=32(color)(epochs=25)        | 2 | Y | Spread    | Y |  68.1000   |
+| A=B=C=D=32        | 2 | Y | Spread    | 10 |  62.480   |
+| A=B=C=D=32(B/W)        | 2 | Y | Spread    | 10 |  55.2   |
+| A=64 B=8 C=16 D=16        | 2 | Y | Spread    | 10 |  60.17000   |
+| A=B=C=D=32        | 2 | Y | Spread    | 25 |  68.1000   |
+| A=B=C=D=32        | 2 | Y | Spread    | 35 |  71.16000   |
+
 
 
 
