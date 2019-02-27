@@ -24,7 +24,7 @@ Following is the result after training:
 | A=64 B=8 C=16 D=16        | 2 | Y | Spread    | 10 |  60.17000   |
 | A=B=C=D=32        | 2 | Y | Spread    | 25 |  68.1000   |
 | A=B=C=D=32        | 2 | Y | Spread    | 35 |  71.16000   |
-| A=64 B=8 C=16 D=16        | 2 | Y | Spread    | 35 |  69.9100   |
+| A=64 B=8 C=16 D=16        | 2 | Y | Spread    | 35 |  71.5200   |
 
 
 
